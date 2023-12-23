@@ -1,0 +1,23 @@
+/* Background color for specific buttons */
+.bg-yellow {
+    background-color: rgb(236, 134, 50);
+}
+
+.bg-green {
+    background-color: green;
+}
+
+/* Font color for specific buttons */
+.font-black {
+    color: black;
+}
+
+.font-white {
+    color: #ffff;
+}
+
+/* Margin for yellow buttons row */
+.y-button {
+    margin-top: 33px;
+    margin-bottom: 16px;
+}

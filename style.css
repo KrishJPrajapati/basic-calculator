@@ -1,0 +1,135 @@
+/* Body styling */
+body {
+    background: #6973ea;
+}
+
+/* Container styling */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Heading styling */
+.heading {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 55px;
+}
+
+/* "Launch" button styling */
+.open {
+    cursor: pointer;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: rgb(6, 16, 26);
+    font-weight: bolder;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 6px 6px 30px -10px #000;
+    margin-top: 25px;
+    transition: 1s;
+}
+
+/* Hover effect for "Launch" button */
+.open:hover {
+    background: rgb(54, 82, 109);
+    color: #fff;
+}
+
+/* Popup overlay styling */
+.popup-overlay {
+    background: rgb(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+/* Show overlay effect */
+.show-overlay {
+    z-index: 1;
+    opacity: 1;
+}
+
+/* Popup content styling */
+.popup-content {
+    height: 520px;
+    width: 400px;
+    background: #4f4e4e;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* Show popup content effect */
+.p-c-show {
+    z-index: 9;
+    opacity: 1;
+}
+
+/* Screen input styling */
+#screen {
+    background: #bbbbbb;
+    font-size: 64px;
+    height: 4.3rem;
+    margin-bottom: 10px;
+    border-width: medium;
+    width: 392px;
+    border-color: blueviolet;
+}
+
+/* Calculator button styling */
+.num {
+    cursor: pointer;
+    width: 97px;
+    padding: 14px 25px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 36px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 0.4px #000;
+}
+
+/* Styling for "00" button */
+.b00 {
+    padding: 20px 10px;
+}
+
+/* Hover effect for numeric buttons */
+.num-b:hover {
+    background-color: #272e2e;
+    color: #f2ecec;
+}
+
+/* Hover effect for "=" button */
+.num-c:hover {
+    background-color: #1edd21;
+    color: #151515;
+}
+
+/* Hover effect for other buttons */
+.num-a:hover {
+    color: #cbc0c0;
+}
+
+/* Align rows */
+div .row {
+    align-items: center;
+}
+

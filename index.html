@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="util.css">
+    <style> </style>
+</head>
+<body>
+    <div class="container">   
+        <h1 class="heading">Calculator App</h1>
+        <a class="open" onclick="overlay()">Launch</a>
+    </div>
+    <div class="popup-overlay" id="popup-modal">
+        <div class="popup-content">
+
+            <!-- Input screen for calculator -->
+            <input type="text" id="screen">
+
+            <!-- Calculator buttons -->
+            <div class="row y-button">
+                <button class="num bg-yellow font-black num-a" onclick="clearAll()">AC</button>
+                <button class="num bg-yellow font-black num-a">%</button>
+                <button class="num bg-yellow font-black num-a" onclick="clearLast()">C</button>
+                <button class="num bg-yellow font-black num-a">/</button>
+            </div>
+            <div class="row">
+                <button class="num num-b">9</button>
+                <button class="num num-b">8</button>
+                <button class="num num-b">7</button>
+                <button class="num bg-yellow num-a">*</button>
+            </div>
+            <div class="row">
+                <button class="num num-b">4</button>
+                <button class="num num-b">5</button>
+                <button class="num num-b">6</button>
+                <button class="num bg-yellow num-a">+</button>
+            </div>
+            <div class="row">
+                <button class="num num-b">3</button>
+                <button class="num num-b">2</button>
+                <button class="num num-b">1</button>
+                <button class="num bg-yellow num-a">-</button>
+            </div>
+            <div class="row">
+                <button class="num num-b" class="b00">00</button>
+                <button class="num num-b">0</button>
+                <button class="num num-b">.</button>
+                <button class="num bg-green font-white num-c" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
