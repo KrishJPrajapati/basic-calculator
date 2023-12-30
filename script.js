@@ -28,17 +28,17 @@ Array.from(buttons).forEach((button) => {
         if (event.target.innerHTML == '=') {
             // Call the calculate function
             calculate();
-        } 
+        }
         // Check if the clicked button is the "AC" button
         else if (event.target.innerHTML == 'AC') {
             // Call the clearAll function
             clearAll();
-        } 
+        }
         // Check if the clicked button is the "C" button
         else if (event.target.innerHTML == 'C') {
             // Call the clearLast function
             clearLast();
-        } 
+        }
         // Otherwise, append the button value to the input string
         else {
             console.log(event.target);
@@ -54,10 +54,11 @@ Array.from(buttons).forEach((button) => {
 // Function to evaluate and display the result
 function calculate() {
     // Evaluate the expression stored in the string
-    string = eval(string);
+    result = eval(string);
 
     // Display the result on the screen
-    document.getElementById('screen').value = string;
+    document.getElementById('screen').value = result;
+    string = String(result);
 }
 
 // Function to clear all entries
@@ -72,7 +73,7 @@ function clearAll() {
 // Function to clear the last digit
 function clearLast() {
     // Remove the last character from the string
-    string = string.slice(0,-1);
+    string = string.slice(0, -1);
 
     // Display the updated string on the screen
     document.getElementById('screen').value = string;
